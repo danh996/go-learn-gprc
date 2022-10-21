@@ -1,8 +1,6 @@
 gen:
-    protoc --proto_path=proto proto/*.proto --go_out=plugins=grpc:pb
-
+	protoc --proto_path=proto proto/*.proto --go_out=plugins=grpc:pb
 clean:
-    rm pb/*.go 
-
+	rm pb/*.go 
 run:
-    go run main.go
+	go run main.go
