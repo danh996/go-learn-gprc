@@ -18,7 +18,7 @@ func Room(c *fiber.Ctx) error {
 		return nil
 	}
 
-	uuid, suuid, _ :=createOrGetRoom(uuid)
+	uuid, suuid, _ := createOrGetRoom(uuid)
 }
 
 func RoomWebSocket(c *fiber.Ctx) error {
@@ -31,6 +31,6 @@ func RoomWebSocket(c *fiber.Ctx) error {
 
 }
 
-func createOrGetRoom(uuid string)(string, string, Room){
-	
+func createOrGetRoom(uuid string) (string, string, Room) {
+
 }
